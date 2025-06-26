@@ -1,0 +1,14 @@
+host: https://testchqa.testrail.io/
+project: "TestRail Software Test Project"
+username: chaker.nehos@gmail.com
+password: myTestRail234!
+title: Nunit3 automated Tests TRCLI
+project_id: 1
+suite_id: 1
+plan_id: 49
+run_id: 54
+milestone_id: 5
+section_id: 47
+refs: "TES-27"
+version: "1.0.0"
+description: "This is a test run created by TRCLI for NUnit3 tests."
