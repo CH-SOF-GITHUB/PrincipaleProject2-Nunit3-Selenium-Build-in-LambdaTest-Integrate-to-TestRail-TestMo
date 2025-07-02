@@ -104,3 +104,5 @@ C:\Users\chaker\source\repos\TestRail\TestRailTesting\obj\Debug\net8.0\refint\Te
 C:\Users\chaker\source\repos\TestRail\TestRailTesting\obj\Debug\net8.0\TestRailTesting.pdb
 C:\Users\chaker\source\repos\TestRail\TestRailTesting\obj\Debug\net8.0\TestRailTesting.genruntimeconfig.cache
 C:\Users\chaker\source\repos\TestRail\TestRailTesting\obj\Debug\net8.0\ref\TestRailTesting.dll
+C:\Users\chaker\source\repos\TestRail\TestRailTesting\obj\Debug\net8.0\TestRailTesting.sourcelink.json
+C:\Users\chaker\source\repos\TestRail\TestRailTesting\bin\Debug\net8.0\SeleniumExtras.WaitHelpers.dll

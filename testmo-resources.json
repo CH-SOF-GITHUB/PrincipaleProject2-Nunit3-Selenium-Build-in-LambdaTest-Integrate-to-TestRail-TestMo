@@ -1,0 +1,23 @@
+{
+  "fields": [
+    {
+      "type": "string",
+      "name": "Version",
+      "value": "1.0.0-5fbcc8d0"
+    }
+  ],
+  "links": [
+    {
+      "name": "appvizer-register-page",
+      "url": "https://www.appvizer.fr/inscription",
+      "note": "Tester should navigate to this URL to access to registerpage and test submit register form with all required and no required fields"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "Nunit 3Junit Result Report xml",
+      "url": "https://drive.google.com/file/d/1Hnqqo9k7QseL8rdNHL-jCRX3Iywy2XrF/view?usp=drive_link",
+      "note": "Results of automation tests junit report"
+    }
+  ]
+}

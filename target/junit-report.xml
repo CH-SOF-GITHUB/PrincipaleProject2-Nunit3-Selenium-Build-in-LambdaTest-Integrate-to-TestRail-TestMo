@@ -1,1 +1,5 @@
-﻿<testsuites tests="12" failures="0" disabled="0" time="30.855703">TestRailTesting.trc_automated_tests.Test1.TestRailAddMoreOneProductToFavoritesConnectionLogInStatus<testsuite tests="1" time="30.683459" errors="0" failures="0" skipped="0" timestamp="2025-06-24T12:50:57.5786543Z" name="TestRailTesting.dll.TestRailTesting.trc_automated_tests.BstackDemo-Ecommerce funcs.TestRailAddMoreOneProductToFavoritesConnectionLogInStatus."><testcase name="TestRailAddMoreOneProductToFavoritesConnectionLogInStatus()" assertions="2" time="30.679946" status="Passed" classname="TestRailTesting.trc_automated_tests.Test1" /></testsuite></testsuites>
+﻿<testsuites tests="22" failures="0" disabled="0" time="34.411928">
+	TestRailTesting.trc_automated_tests.SeleniumAppvizer.TestMo_AppvizerReceiveFirstEmailWithLoginCredentials<testsuite tests="1" time="34.205841" errors="0" failures="0" skipped="0" timestamp="2025-07-02T17:27:18.1737258Z" name="TestRailTesting.dll.TestRailTesting.trc_automated_tests.SeleniumAppvizer.TestMo_AppvizerReceiveFirstEmailWithLoginCredentials.">
+		<testcase name="TestMo_AppvizerReceiveFirstEmailWithLoginCredentials()" assertions="2" time="34.202177" status="Passed" classname="TestRailTesting.trc_automated_tests.SeleniumAppvizer" />
+	</testsuite>
+</testsuites>

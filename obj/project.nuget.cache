@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "MuuVis+/sV0=",
+  "dgSpecHash": "/yIfsqQwUJw=",
   "success": true,
   "projectFilePath": "C:\\Users\\chaker\\source\\repos\\TestRail\\TestRailTesting\\TestRailTesting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chaker\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
+    "C:\\Users\\chaker\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\chaker\\.nuget\\packages\\fluentassertions\\8.3.0\\fluentassertions.8.3.0.nupkg.sha512",
     "C:\\Users\\chaker\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
     "C:\\Users\\chaker\\.nuget\\packages\\microsoft.net.test.sdk\\17.8.0\\microsoft.net.test.sdk.17.8.0.nupkg.sha512",
