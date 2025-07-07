@@ -17,7 +17,7 @@
 # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Getting-Started.gitlab-ci.yml
 
 Test:
-  stage: Test
+  stage: test
   script:
     - 'dotnet test --test-adapter-path:. --filter "FullyQualifiedName~TestRailTesting.trc_automated_tests.SeleniumAppvizer.TestMo_AppvizerDisplayHomePage" --logger:"junit;LogFilePath=..\artifacts\{assembly}-test-result.xml;MethodFormat=Class;FailureBodyFormat=Verbose"'
   artifacts:
