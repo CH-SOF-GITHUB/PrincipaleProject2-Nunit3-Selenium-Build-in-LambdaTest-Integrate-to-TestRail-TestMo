@@ -19,11 +19,12 @@
 Test:
   stage: test
   script:
-    - 'dotnet test --test-adapter-path:. --filter "FullyQualifiedName~TestRailTesting.trc_automated_tests.SeleniumAppvizer.TestMo_AppvizerDisplayHomePage" --logger:"junit;LogFilePath=..\artifacts\{assembly}-test-result.xml;MethodFormat=Class;FailureBodyFormat=Verbose"'
+    - mkdir -p artifacts
+    - 'dotnet test --test-adapter-path:. --filter "FullyQualifiedName~TestRailTesting.trc_automated_tests.SeleniumAppvizer.TestMo_AppvizerDisplayHomePage" --logger:"junit;LogFilePath=./artifacts/{assembly}-test-result.xml;MethodFormat=Class;FailureBodyFormat=Verbose"'
   artifacts:
     when: always
     paths:
-      - .\artifacts\*test-result.xml
+      - ./artifacts/*test-result.xml
     reports:
       junit:
-        - .\artifacts\*test-result.xml
+        - ./artifacts/*test-result.xml
