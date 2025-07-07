@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestRailTesting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+379c53bea8efd7008ab86a4fe592ef6c6307901f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf8130675280dd78ab588b0054f810be455ebe92")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestRailTesting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestRailTesting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
