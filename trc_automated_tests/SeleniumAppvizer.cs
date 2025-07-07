@@ -22,11 +22,20 @@ namespace TestRailTesting.trc_automated_tests
         private IWebElement PrenomField, NomField, EmailField, PosteField, EntrepriseField, CheckboxNotifications, ConnexionButton;
 
         [TestCase(Description = "Verify that the directs directly to home page and The homepage loads successfully with the correct title.")]
-        public void TestMo_AppvizerDisplayHomePage()
+        public void TestMo_AppvizerDisplayHomePage1()
         {
             IDriver.Navigate().GoToUrl("https://www.appvizer.fr/");
             string HomePageTitle = IDriver.Title;
             Assert.That(HomePageTitle, Is.EqualTo("Appvizer | Média & Comparateur de Logiciels pour les Professionnels"));
+            Console.WriteLine("Home page loads and displays correctly with a title 'appvizer.fr - 1er Comparateur de logiciels en ligne'");
+        }
+
+        [TestCase(Description = "Verify that the directs directly to home page with the correct URL.")]
+        public void TestMo_AppvizerDisplayHomePage2()
+        {
+            IDriver.Navigate().GoToUrl("https://www.appvizer.fr/");
+            string HomePageUrl = IDriver.Url;
+            Assert.That(HomePageUrl, Is.EqualTo("https://www.appvizer.fr/"));
             Console.WriteLine("Home page loads and displays correctly with a title 'appvizer.fr - 1er Comparateur de logiciels en ligne'");
         }
 
