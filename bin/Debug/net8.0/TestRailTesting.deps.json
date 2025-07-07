@@ -10,6 +10,8 @@
         "dependencies": {
           "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
           "FluentAssertions": "8.3.0",
+          "JUnitTestLogger": "1.1.0",
+          "JunitXml.TestLogger": "6.1.0",
           "Microsoft.NET.Test.Sdk": "17.8.0",
           "NUnit": "3.14.0",
           "NUnit.Analyzers": "3.9.0",
@@ -46,6 +48,12 @@
           }
         }
       },
+      "JUnitTestLogger/1.1.0": {
+        "dependencies": {
+          "Microsoft.TestPlatform.ObjectModel": "17.8.0"
+        }
+      },
+      "JunitXml.TestLogger/6.1.0": {},
       "Microsoft.CodeCoverage/17.8.0": {
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -438,6 +446,20 @@
       "sha512": "sha512-iri1druxHPUAvaFqTUKJG7NOHwnOLmWwfDorgezZWpeBWBJmk2o8niI7jL7zW9TEFGnUpMJi/JLG6FXgr3cM3A==",
       "path": "fluentassertions/8.3.0",
       "hashPath": "fluentassertions.8.3.0.nupkg.sha512"
+    },
+    "JUnitTestLogger/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5nIxpRXczNH2To76s/AxmgiXrfMeebLx10R8edNO4w5UNo2diCUf0kQn0qC5+WPnONCjmtzyFrHolK+b7aBemQ==",
+      "path": "junittestlogger/1.1.0",
+      "hashPath": "junittestlogger.1.1.0.nupkg.sha512"
+    },
+    "JunitXml.TestLogger/6.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a3ciawoHOzqcry7yS5z9DerNyF9QZi6fEZZJPILSy6Noj6+r8Ydma+cENA6wvivXDCblpXxw72wWT9QApNy/0w==",
+      "path": "junitxml.testlogger/6.1.0",
+      "hashPath": "junitxml.testlogger.6.1.0.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.8.0": {
       "type": "package",

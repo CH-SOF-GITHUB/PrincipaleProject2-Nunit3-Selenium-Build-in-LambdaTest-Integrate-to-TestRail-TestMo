@@ -10,13 +10,14 @@
         "projectUniqueName": "C:\\Users\\chaker\\source\\repos\\TestRail\\TestRailTesting\\TestRailTesting.csproj",
         "projectName": "TestRailTesting",
         "projectPath": "C:\\Users\\chaker\\source\\repos\\TestRail\\TestRailTesting\\TestRailTesting.csproj",
-        "packagesPath": "C:\\Users\\chaker\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\chaker\\source\\repos\\TestRail\\TestRailTesting\\NuGet",
         "outputPath": "C:\\Users\\chaker\\source\\repos\\TestRail\\TestRailTesting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+          "C:\\Users\\chaker\\source\\repos\\TestRail\\TestRailTesting\\NuGet.Config",
           "C:\\Users\\chaker\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -57,6 +58,14 @@
             "FluentAssertions": {
               "target": "Package",
               "version": "[8.3.0, )"
+            },
+            "JUnitTestLogger": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "JunitXml.TestLogger": {
+              "target": "Package",
+              "version": "[6.1.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",

@@ -15,7 +15,7 @@ namespace TestRailTesting.Base
     internal class BaseTest
     {
         // define how  to get Name of Test Methods
-        private TestContext TestContext { get; set; }
+        protected TestContext TestContext { get; set; }
         // define a new WebDriver variable
         protected IWebDriver IDriver;
 
@@ -24,7 +24,7 @@ namespace TestRailTesting.Base
         // Declare an instance of class YopMail to use its methods and properties
         protected YopMail yopMailPage;
 
-        /*
+        
         [SetUp]
         public void Setup()
         {
@@ -57,9 +57,10 @@ namespace TestRailTesting.Base
             registerPage = new RegisterPage(IDriver);
             // Initialize the YopMail instance with the current driver
             yopMailPage = new YopMail(IDriver);
-        }*/
+        }
 
-
+        // SetUp Method 2
+        /*
         [SetUp]
         public void Setup()
         {
@@ -72,7 +73,7 @@ namespace TestRailTesting.Base
             // Initialize the YopMail instance with the current driver
             yopMailPage = new YopMail(IDriver);
         }
-
+        */
         public void TakeResult_screenshot()
         {
             if (IDriver == null)
@@ -125,7 +126,7 @@ namespace TestRailTesting.Base
             }
         }
 
-        /*
+        
         [TearDown]
         public void Teardown()
         {
@@ -147,8 +148,9 @@ namespace TestRailTesting.Base
                 Console.WriteLine("Selenium webdriver quit !");
             }
         }
-        */
+        
         // Teardown 2 method
+        /*
         [TearDown]
         public void Teardown()
         {
@@ -162,6 +164,7 @@ namespace TestRailTesting.Base
             {
                 Console.WriteLine("WebDriver is not initialized. Cannot quit.");
             }
-        }
+        }*/
+        
     }
 }

@@ -106,3 +106,6 @@ C:\Users\chaker\source\repos\TestRail\TestRailTesting\obj\Debug\net8.0\TestRailT
 C:\Users\chaker\source\repos\TestRail\TestRailTesting\obj\Debug\net8.0\ref\TestRailTesting.dll
 C:\Users\chaker\source\repos\TestRail\TestRailTesting\obj\Debug\net8.0\TestRailTesting.sourcelink.json
 C:\Users\chaker\source\repos\TestRail\TestRailTesting\bin\Debug\net8.0\SeleniumExtras.WaitHelpers.dll
+C:\Users\chaker\source\repos\TestRail\TestRailTesting\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Extension.JUnit.Xml.TestLogger.dll
+C:\Users\chaker\source\repos\TestRail\TestRailTesting\bin\Debug\net8.0\Spekt.TestLogger.dll
+C:\Users\chaker\source\repos\TestRail\TestRailTesting\bin\Debug\net8.0\JUnit.TestLogger.dll

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testsuites time="29.239" tests="1" failures="0">
+  <testsuite id="0" name="TestRailTesting.dll" tests="1" failures="0" time="29.239">
+    <testcase classname="TestRailTesting.trc_automated_tests.SeleniumAppvizer" name="TestMo_AppvizerDisplayHomePage()" time="29.2387340" />
+  </testsuite>
+</testsuites>

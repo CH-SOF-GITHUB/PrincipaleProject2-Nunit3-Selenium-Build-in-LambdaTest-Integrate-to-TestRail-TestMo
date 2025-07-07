@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NUnit.Extension.NUnitV2ResultWriter</id>
+    <version>3.8.0</version>
+    <title>NUnit V2 Result Writer</title>
+    <authors>Charlie Poole</authors>
+    <owners>Charlie Poole</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>nunit_256.png</icon>
+    <projectUrl>https://nunit.org/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/nunit/resources/master/images/icon/nunit_256.png</iconUrl>
+    <description>This extension allows NUnit to create result files in the V2 format, which is used by many CI servers.</description>
+    <summary>NUnit Engine extension for writing test result files in NUnit V2 format.</summary>
+    <releaseNotes>https://github.com/nunit/nunit-v2-result-writer/releases</releaseNotes>
+    <copyright>Copyright (c) 2016-2024 Charlie Poole</copyright>
+    <language>en-US</language>
+    <tags>nunit test testing tdd engine extension</tags>
+    <repository type="git" url="https://github.com/nunit/nunit-v2-result-writer" />
+  </metadata>
+</package>

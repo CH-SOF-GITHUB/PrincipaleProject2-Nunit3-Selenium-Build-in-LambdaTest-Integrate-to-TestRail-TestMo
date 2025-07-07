@@ -21,6 +21,15 @@ namespace TestRailTesting.trc_automated_tests
     {
         private IWebElement PrenomField, NomField, EmailField, PosteField, EntrepriseField, CheckboxNotifications, ConnexionButton;
 
+        [TestCase(Description = "Verify that the directs directly to home page and The homepage loads successfully with the correct title.")]
+        public void TestMo_AppvizerDisplayHomePage()
+        {
+            IDriver.Navigate().GoToUrl("https://www.appvizer.fr/");
+            string HomePageTitle = IDriver.Title;
+            Assert.That(HomePageTitle, Is.EqualTo("Appvizer | Média & Comparateur de Logiciels pour les Professionnels"));
+            Console.WriteLine("Home page loads and displays correctly with a title 'appvizer.fr - 1er Comparateur de logiciels en ligne'");
+        }
+
         [TestCase(Description = "verify that the register page loads successfully and displays with all fields register submit form")]
         public void TestMo_AppvizerDisplayInscriptionPage()
         {
@@ -202,6 +211,7 @@ namespace TestRailTesting.trc_automated_tests
             Assert.That(actualIsNgInvalidEmail, Is.True, "The ng-invalid-email class is not displayed as expected after form submission with an invalid email.");
         }
 
+        // Tested
         [TestCase(Description = "User submits the registration form and receives the first email containing login credentials")]
         public void TestMo_AppvizerReceiveFirstEmailWithLoginCredentials()
         {
@@ -267,6 +277,7 @@ namespace TestRailTesting.trc_automated_tests
             */
         }
 
+        // Tested
         [TestCase(Description = "User tries to submit the registration form with an email that already exists in the system")]
         public void TestMo_AppvizerRegistrationFormSubmissionWithEmailExists()
         {
@@ -293,6 +304,7 @@ namespace TestRailTesting.trc_automated_tests
             Assert.IsTrue(LoginToggleRegister.Displayed, "User not remains in same page of register to validate the failure of submit with email exists");
         }
 
+        // Tested
         [TestCase(Description = "Proper error message displays when User submits the registration form with an email that already exists in the system")]
         public void TestMo_AppvizerProperErrorMessageForEmailExists()
         {
@@ -323,5 +335,34 @@ namespace TestRailTesting.trc_automated_tests
             });
         }
 
+        [TestCase(Description = "The user verifies the presence of the 'Appvizer Registration' link in the login form page")]
+        public void TestMo_AppvizerRegistrationLinkPresent()
+        {
+            // Step 1: Open the Appvizer login page with the URl "https://www.appvizer.fr/connexion"
+            IDriver.Navigate().GoToUrl("https://www.appvizer.fr/connexion");
+            // Step 2: Verify that the registration link is present on the login page
+            IWebElement RegistrationLink = IDriver.FindElement(By.CssSelector("body > ui-view > div > div > div.main-content-no-sticky-header.ng-scope > div > div > div > div.login-box.container-fluid > div > a > span"));
+            string RegistrationLinkText = RegistrationLink.Text;
+            Assert.Multiple(() =>
+            {
+                Assert.IsTrue(RegistrationLink.Displayed, "The registration link is not displayed on the login page as expected.");
+                Assert.That(RegistrationLinkText, Is.EqualTo("Vous n'avez pas de compte ? S'enregistrer"));
+            });
+        }
+
+        [TestCase(Description = "The user should direct to the registration page")]
+        public void TestMo_AppvizerNavigationOfRegistrationLink()
+        {
+            // Step 1: Open the Appvizer login page with the URl "https://www.appvizer.fr/connexion"
+            IDriver.Navigate().GoToUrl("https://www.appvizer.fr/connexion");
+            // Step 2: Locate the registration link and Click it
+            IWebElement RegistrationLink = IDriver.FindElement(By.CssSelector("body > ui-view > div > div > div.main-content-no-sticky-header.ng-scope > div > div > div > div.login-box.container-fluid > div > a > span"));
+            RegistrationLink.Click();
+            // Step 3: Check that the user is redirected to the registration page
+            string urlOfRegistration = IDriver.Url;
+            Assert.That(urlOfRegistration, Is.EqualTo("https://www.appvizer.fr/inscription"));
+        }
+
+        
     }
 }
