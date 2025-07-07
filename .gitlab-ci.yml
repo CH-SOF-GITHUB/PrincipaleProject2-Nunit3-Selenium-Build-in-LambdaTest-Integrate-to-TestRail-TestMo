@@ -17,6 +17,7 @@
 # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Getting-Started.gitlab-ci.yml
 
 Test:
+  image: mcr.microsoft.com/dotnet/sdk:8.0  # or 7.0, or 6.0 — match your .NET version
   stage: test
   script:
     - mkdir -p artifacts
